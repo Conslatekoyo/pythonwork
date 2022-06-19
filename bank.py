@@ -91,7 +91,7 @@ class Account():
             return "Sorry, you have insufficient balance"
         elif amount<=0:
             return "Sorry, your amount is invalid"
-        elif isinstance(account2_name,Account):
+        else:
             self.balance-=amount
             return f"You have transfered {amount} to {account2_name} and your balance is {self.balance} "
         
